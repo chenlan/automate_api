@@ -1,0 +1,23 @@
+- casename: 根据状态查找Pet
+  data:
+    status: ["AVAILABLE","xxxx"]
+  matchers:
+    - actual: $.code
+      match: "="
+      expect: 200
+
+- casename: 无效的状态查询Pet
+  data:
+    status: ["xxxx"]
+  matchers:
+    - actual: $.code
+      match: "="
+      expect: 200
+
+- casename: 状态为空时查询Pet
+  data:
+    status: [""]
+  matchers:
+    - actual: $.code
+      match: "="
+      expect: 200

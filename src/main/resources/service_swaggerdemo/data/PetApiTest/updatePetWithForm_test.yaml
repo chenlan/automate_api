@@ -1,0 +1,9 @@
+- casename: 更新Pet
+  data:
+    petId: 1
+    name: 55555
+    status: "AVAILABLE"
+  matchers:
+    - actual: $.code
+      match: "="
+      expect: 200

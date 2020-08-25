@@ -1,0 +1,48 @@
+name: addPet_test
+description: addpet描述
+cases:
+  - casename: 添加Pet用例001
+    steps:
+      - description: 请求Pet接口
+        api: PetApi/addPet
+        pramaters:
+          body:
+            id: 12
+            category: null
+            name: "petaaa"
+            photoUrls: []
+            tags:
+              - id: 343
+                name: "buzhidao"
+              - id: 2
+                name: "222buzhidao"
+            status: "AVAILABLE"
+        tsave:
+          petId: $.id
+        matchers:
+          - actual: $.id
+            match: =
+            expect: $.body.id
+
+  - casename: 添加Pet用例002
+    steps:
+      - description: 请求Pet接口
+        api: PetApi/addPet
+        pramaters:
+          body:
+            id: 12
+            category: null
+            name: "petaaa"
+            photoUrls: []
+            tags:
+              - id: 343
+                name: "buzhidao"
+              - id: 2
+                name: "222buzhidao"
+            status: "AVAILABLE"
+        tsave:
+          petId: $.id
+        matchers:
+          - actual: $.id
+            match: =
+            expect: $.body.id

@@ -1,0 +1,118 @@
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 12,
+    "category": null,
+    "name": "petaaa",
+    "photoUrls": [
+        
+    ],
+    "tags": [
+        {
+            "id": 343,
+            "name": "buzhidao"
+        },
+        {
+            "id": 2,
+            "name": "222buzhidao"
+        }
+    ],
+    "status": "AVAILABLE"
+}
+HTTP/1.1 200 OK
+Date: Mon, 24 Aug 2020 15:48:32 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 12,
+    "name": "petaaa",
+    "photoUrls": [
+        
+    ],
+    "tags": [
+        {
+            "id": 343,
+            "name": "buzhidao"
+        },
+        {
+            "id": 2,
+            "name": "222buzhidao"
+        }
+    ],
+    "status": "AVAILABLE"
+}
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 12,
+    "category": null,
+    "name": "petaaa",
+    "photoUrls": [
+        
+    ],
+    "tags": [
+        {
+            "id": 343,
+            "name": "buzhidao"
+        },
+        {
+            "id": 2,
+            "name": "222buzhidao"
+        }
+    ],
+    "status": "AVAILABLE"
+}
+HTTP/1.1 200 OK
+Date: Mon, 24 Aug 2020 15:48:37 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 12,
+    "name": "petaaa",
+    "photoUrls": [
+        
+    ],
+    "tags": [
+        {
+            "id": 343,
+            "name": "buzhidao"
+        },
+        {
+            "id": 2,
+            "name": "222buzhidao"
+        }
+    ],
+    "status": "AVAILABLE"
+}

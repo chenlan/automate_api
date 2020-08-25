@@ -1,0 +1,37 @@
+- casename: 添加Pet
+  data:
+    petId: 1224
+    body:
+      id: 12
+      category: null
+      name: "petaaa"
+      photoUrls: []
+      tags:
+        - id: 343
+          name: "buzhidao"
+        - id: 2
+          name: "222buzhidao"
+      status: "AVAILABLE"
+  matchers:
+    - actual: $.name
+      match: contains
+      expect: $.body.name
+
+- casename: 添加空的Tags
+  data:
+    petId: 1224
+    body:
+      id: 12
+      category: null
+      name: "petaaa"
+      photoUrls: []
+      tags:
+        - id: 343
+          name: "buzhidao"
+        - id: 2
+          name: "222buzhidao"
+      status: "AVAILABLE"
+  matchers:
+    - actual: $.name
+      match: contains
+      expect: $.body.name

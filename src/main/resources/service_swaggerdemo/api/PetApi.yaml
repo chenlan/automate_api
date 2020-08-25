@@ -1,0 +1,57 @@
+name: PetApi
+methods:
+
+  addPet:
+    description: Add a new pet to the store
+    url: /pet
+    method: POST
+    body: Pet body # Pet body| Pet object that needs to be added to the store
+
+  deletePet:
+    description: Deletes a pet
+    url: /pet/{petId}
+    method: DELETE
+    headers:
+      apiKey: $apiKey # String apiKey|
+
+  findPetsByStatus:
+    description: Finds Pets by status
+    url: /pet/findByStatus
+    method: GET
+    querys:
+      status: $status # List<String> status| Status values that need to be considered for filter
+
+  findPetsByTags:
+    description: Finds Pets by tags
+    url: /pet/findByTags
+    method: GET
+    querys:
+      tags: $tags # List<String> tags| Tags to filter by
+
+  getPetById:
+    description: Find pet by ID
+    url: /pet/{petId}
+    method: GET
+
+  updatePet:
+    description: Update an existing pet
+    url: /pet
+    method: PUT
+    body: Pet body # Pet body| Pet object that needs to be added to the store
+
+  updatePetWithForm:
+    description: Updates a pet in the store with form data
+    url: /pet/{petId}
+    method: POST
+    form:
+      name: $name # String name| Updated name of the pet
+      status: $status # String status| Updated status of the pet
+
+  uploadFile:
+    description: uploads an image
+    url: /pet/{petId}/uploadImage
+    method: POST
+    form:
+      additionalMetadata: $additionalMetadata # String additionalMetadata| Additional data to pass to server
+      File: file # File file| file to upload
+

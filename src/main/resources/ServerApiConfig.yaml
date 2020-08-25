@@ -1,0 +1,4 @@
+  - name: "swaggerdemo server"
+    basePath: "https://petstore.swagger.io/v2"
+    apiFilePath: "/service_swaggerdemo/api"
+    testCasePath: "/service_swaggerdemo/case"

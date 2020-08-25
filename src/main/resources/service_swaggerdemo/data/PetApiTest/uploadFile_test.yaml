@@ -1,0 +1,19 @@
+- casename: 上传gif文件
+  data:
+    petId: 1224
+    additionalMetadata: 5
+    file: "/Users/cl/qq.gif"
+  matchers:
+    - actual: $.code
+      match: "="
+      expect: 200
+
+- casename: 上传jpg文件
+  data:
+    petId: 1224
+    additionalMetadata: 5
+    file: "/Users/cl/qq.gif"
+  matchers:
+    - actual: $.code
+      match: "="
+      expect: 200
