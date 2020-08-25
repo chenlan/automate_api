@@ -1,6 +1,6 @@
 # automate_api
 
-相关文件介绍（若有swagger文件，可通过swagger-codegen自动生成自定义格式文件）：
+相关主要文件介绍（若有swagger文件，可通过swagger-codegen自动生成自定义格式文件）：
 
 1、接口配置文件PetApi.yaml 
     
