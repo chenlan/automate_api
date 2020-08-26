@@ -2,7 +2,7 @@
 
 RestAssured+Junit5+Allure
 
-相关主要文件介绍（若有swagger文件，可通过swagger-codegen自动生成自定义格式文件）：
+相关主要文件介绍（若有swagger文件，可通过swagger-codegen修改模版或修改源代码，自动生成自定义格式文件）：
 
 1、接口配置文件PetApi.yaml 
     
